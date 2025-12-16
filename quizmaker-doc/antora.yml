@@ -1,0 +1,12 @@
+name: conception
+title: Conception du projet QuizMaker
+version: 1.0.0
+asciidoc:
+  attributes:
+    source-language: asciidoc@
+    xrefstyle: short@
+    listing-caption: Listing@
+    example-caption: true
+    experimental: true
+nav:
+- modules/ROOT/nav.adoc
