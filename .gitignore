@@ -1,0 +1,8 @@
+.cache/
+.idea/
+build/
+node_modules/
+packages/*/node_modules/
+reports*/
+.nvmrc
+npm/release.sh
