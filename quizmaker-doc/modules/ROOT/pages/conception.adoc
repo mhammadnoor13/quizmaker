@@ -1,17 +1,6 @@
-= Conception du projet QuizMaker
-
-== Introduction
-
-This documentation presents the conception of the QuizMaker project.
-
-== UML Class Diagram
-
-[plantuml, quizmaker-class-diagram, png]
-----
-@startuml
+[plantuml,,svg]
+....
 class Quiz
 class Question
-
 Quiz "1" -- "0..*" Question : contains
-@enduml
-----
+....

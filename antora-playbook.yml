@@ -15,3 +15,9 @@ ui:
 
 output:
   dir: build/site
+
+asciidoc:
+  extensions:
+  - asciidoctor-plantuml
+  attributes:
+    plantuml-server-url: http://www.plantuml.com/plantuml
