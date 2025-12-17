@@ -1,0 +1,35 @@
+@startuml
+
+class Question{
+  - id : UUID
+  - text : String
+  - choices : List<Choice>
+  + Question(text : String)
+  + addChoice(choice : Choice) : void
+  + getId() : UUID
+  + getText() : String
+  + getChoices() : List<Choice>
+  + isValid() : boolean
+  }
+
+class Choice{
+  - id : UUID
+  - text : String
+  - correct : Boolean
+  + Choice(text:String)
+  + getId() : UUID
+  + getText() : String
+  + isCorrect() : boolean
+  }
+
+Question "1" *-- "2..*" Choice : owns
+
+note right of Question
+{constraints}
+- text not blank
+- choices size >= 2
+- exactly 1 correct choice:
+  choices->select(correct)->size() = 1
+end note
+
+@enduml

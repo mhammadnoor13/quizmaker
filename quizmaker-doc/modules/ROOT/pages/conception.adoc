@@ -1,6 +1,4 @@
 [plantuml,,svg]
 ....
-class Quiz
-class Question
-Quiz "1" -- "0..*" Question : contains
+include::example$question-choice.puml[]
 ....

@@ -1,0 +1,42 @@
+@startuml
+
+Class "Class A" as A
+Class "Class B" as B
+Class "Class C" as C
+Class "Class D" as D
+Class "Class E" as E
+
+interface Serializable {
+  read()
+  write()
+}
+
+class Exporter {
+  write()
+}
+
+class HTMLPage {
+  title : String
+  size : Integer
+  render()
+  save()
+}
+
+Exporter ..> Serializable : uses
+HTMLPage ..|> Serializable
+
+
+A *-- D
+A --> E
+A o-- C
+A "role a" -- "role b" B : Association Name
+
+
+
+
+
+
+
+
+
+@enduml
