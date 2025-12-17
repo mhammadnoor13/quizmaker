@@ -28,8 +28,6 @@ note right of Question
 {constraints}
 - text not blank
 - choices size >= 2
-- exactly 1 correct choice:
-  choices->select(correct)->size() = 1
 end note
 
 @enduml
